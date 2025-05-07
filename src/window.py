@@ -29,7 +29,9 @@ class Window:
         self.__root.bind("<Key>", self._on_key)
 
     def show_message(self, x, y, text):
-        """ """
+        """
+        Writes a message 'text' in black Helvetica size 16 font at x, y
+        """
         self.__canvas.create_text(x, y, text=text, fill="black", font=("Helvetica", 16))
 
     def _on_key(self, event):

@@ -53,7 +53,7 @@ class Cell:
 
         Args:
             to_cell: The destination cell to draw a line to
-            undo: If True, draws white line (backtracking),
+            undo: If True, draws grey line (backtracking),
                   otherwise draws red line (forward movement)
         """
         color = "grey" if undo else "red"
